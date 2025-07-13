@@ -45,7 +45,12 @@ Check if a number is a multiple of 3 or 5.
 
 - [Dart SDK](https://dart.dev/get-dart) must be installed.
 
-### ▶️ How to Run
 
-```bash
-dart run main.dart
+
+## 👤 Author
+
+**Muhammad Mubashir**  
+🎓 BSCS Graduate | 💻 WordPress & Flutter Developer  
+🔗 [LinkedIn](https://www.linkedin.com/in/mmubashir24)  
+🐙 [GitHub](https://github.com/muhammadmubashir24)
+
