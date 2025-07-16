@@ -1,3 +1,5 @@
+import 'dart:io';
+
 void main() {
   // Q1: Check if it's square or rectangle
   int length = 10;
@@ -22,8 +24,11 @@ void main() {
   // Q3: Attendance percentage
   int totalClasses = 16;
   int attendedClasses = 10;
-  double attendancePercent = (attendedClasses / totalClasses) * 100;
-  print("Q3: Attendance Percentage = ${attendancePercent.toStringAsFixed(2)}%");
+  double attendancePercent =
+      (attendedClasses / totalClasses) * 100;
+  print(
+    "Q3: Attendance Percentage = ${attendancePercent.toStringAsFixed(2)}%",
+  );
   if (attendancePercent >= 75) {
     print("Q3: Student is allowed to sit in exam");
   } else {
@@ -32,7 +37,8 @@ void main() {
 
   // Q4: Check leap year
   int year = 2000;
-  if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+  if ((year % 4 == 0 && year % 100 != 0) ||
+      year % 400 == 0) {
     print("Q4: $year is a Leap Year");
   } else {
     print("Q4: $year is NOT a Leap Year");
@@ -83,4 +89,15 @@ void main() {
   } else {
     print("Q8: $numCheck is NOT a multiple of 3 or 5");
   }
+
+  // Q9: Self Task
+  stdout.write("Enter your name: ");
+  String? name = stdin.readLineSync(); // For string input
+
+  stdout.write("Enter your age: ");
+  int age = int.parse(
+    stdin.readLineSync()!,
+  ); // For integer input
+
+  print("Self Task: Hello $name, you are $age years old.");
 }
